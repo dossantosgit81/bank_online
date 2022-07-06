@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Setter
 @Builder
 @Entity
-@SQLDelete(sql = "UPDATE customer SET deleted = 1 WHERE ID_CUSTOMER = ? ")
+@SQLDelete(sql = "UPDATE customer SET deleted = 1 WHERE id_customer = ? ")
 @Where(clause="deleted=false")
 @AllArgsConstructor
 @NoArgsConstructor
