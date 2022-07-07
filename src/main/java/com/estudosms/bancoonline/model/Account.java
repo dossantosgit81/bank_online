@@ -33,18 +33,7 @@ public class Account {
 
     private Boolean deleted = Boolean.FALSE;
 
+    @ManyToOne
     private Customer customer;
 
-
-    /*
-    *
-     idAccount
-	 balance
-	 RFCustomer
-	 accountType
-	 number
-	 agency
-	 status
-    *
-    * */
 }

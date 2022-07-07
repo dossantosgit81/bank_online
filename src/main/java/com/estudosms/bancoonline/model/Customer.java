@@ -1,10 +1,20 @@
 package com.estudosms.bancoonline.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.Where;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.List;
 
 @Getter
 @Setter
@@ -32,5 +42,8 @@ public class Customer {
 
     @Column(name = "DELETED")
     private Boolean deleted = Boolean.FALSE;
+
+    @OneToMany(mappedBy = "customer")
+    private List<Account> accounts;
 
 }
