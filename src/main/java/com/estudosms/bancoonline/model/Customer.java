@@ -28,19 +28,14 @@ public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="ID_CUSTOMER")
     private Long idCustomer;
 
-    @Column(name="FIRSTNAME")
     private String firstName;
 
-    @Column(name="LASTNAME")
     private String lastName;
 
-    @Column(name="CPF")
     private String cpf;
 
-    @Column(name = "DELETED")
     private Boolean deleted = Boolean.FALSE;
 
     @OneToMany(mappedBy = "customer")
