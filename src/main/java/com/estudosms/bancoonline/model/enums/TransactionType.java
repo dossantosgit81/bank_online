@@ -6,6 +6,6 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public enum TransactionType {
-    DOC,
-    TED
+    BANK_TRANSFER_DOC,
+    BAK_TRANSFER_TED
 }
