@@ -1,0 +1,38 @@
+Banco mendes pagamentos SA
+	1.Solicitar processamento de transação passando dados necessários
+
+	2.Verificar se o banco patrocinador existe.
+
+	3.Verificar se a agência patrocinadora existe.
+
+	4.Verificar se o banco beneficario existe.
+
+	5.Verifcar se agência beneficario existe.
+
+	6.Verificar se o saldo da conta patrocinadora é maior igual o que ele quer enviar
+
+	7.Verificar se o cliente está tentando fazer uma operação de transferencia para sua própria conta
+
+	8.Verificar o tipo da conta		
+
+		8A.Tipo da conta DOC
+
+			A. Transação do tipo doc tem uma limite de 4.999,99
+
+			B. O valor só é efetivado no dia útil seguinte para transações feitas até 21:59
+		
+			C. Se a transação for feita após as 21:59, o dinheiro só cai na conta do beneficiario no segundo dia útil.
+
+			E. DOC não aceita transferencias para tipo conta poupança
+
+		8B.Tipo da conta TED
+
+			A. Transferencia do tipo TED, não possue limite de transferencia
+		
+			B. O valor é processado minutos após a solicitação de processamento se a tranferencia for feita antes das 17H
+
+			C. Se você quiser processar uma transação depois desse horário, o valor aparecerar na conta do beneficiario no dia seguinte.
+
+		
+	9.Atualiza saldo beneficiario
+
