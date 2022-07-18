@@ -17,7 +17,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Account {
-
+//Tipo da conta(CPF, CNPJ), dados bancarios(banco, agência, conta)
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "ID_ACCOUNT")
@@ -26,7 +26,7 @@ public class Account {
     @Enumerated(EnumType.STRING)
     private AccountType accountType;
 
-    private BigDecimal balance;
+    private BigDecimal balance = BigDecimal.ZERO;
 
     @Column(name="NUMBER_ACCOUNT")
     private Integer number;
